@@ -1,0 +1,145 @@
+<!-- Elements and Structures -->
+<!-- 
+First things first.
+This is a comment. So, everything that i put inside of these marks will be ignored by the browser and won't execute. 
+In this cheat sheet I will save the most common tags and uses of html code.
+Just for reference. That's it. For more information, w3school is excelent. 
+-->
+
+
+<!-- Headings -->
+<!-- There are 6 different levels from h1 to h6 -->
+<h1>This is a first level heading element</h1>
+
+<!-- Paragraphs -->
+<p>
+  This is a block of text! Lorem ipsum dolor sit amet, consectetur adipisicing
+  elit.
+</p>
+<p>This <em>word</em> will be emphasized in italics.</p>
+<p>This is <strong>important</strong> text!</p>
+
+<!-- Line break -->
+<br />
+
+<!-- Ordered List -->
+<ol>
+  <li>Head east on Prince St</li>
+  <li>Turn left on Elizabeth</li>
+</ol>
+<!-- Unordered List -->
+<ul>
+  <li>Cookies</li>
+  <li>Milk</li>
+</ul>
+
+<!-- Div: for sections -->
+<div>
+  <h1>A section of grouped elements</h1>
+  <p>Here’s some text for the section</p>
+</div>
+<div>
+  <h1>Second section of grouped elements</h1>
+  <p>Here’s some text</p>
+</div>
+
+<!-- Video and images -->
+<video src="test-video.mp4" controls>Video not supported</video>
+
+<img src="image.png" />
+
+<!-- Anchor Element -->
+<a href="http://www.codecademy.com"> <img src="logo.jpg" />Click this image </a>
+<a href="https://www.google.com" target="_blank"
+  >This anchor element links to google and will open in a new tab or window.</a
+>
+
+<!-- Link to Sections of the Page -->
+<div>
+  <p id="id-of-element-to-link-to">A different part of the page!</p>
+</div>
+
+<a href="#id-of-element-to-link-to">Take me to a different part of the page</a>
+
+<!-- Tables -->
+<!-- Basic -->
+<table>
+  <tr>
+    <td>cell one data</td>
+    <td>cell two data</td>
+  </tr>
+</table>
+
+<!-- With Sections -->
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">heading 1</th>
+      <th>heading 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">col 1</td>
+      <td>col 2</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>summary of col 1</td>
+      <td>summary of col 2</td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- Forms -->
+<form method="post" action="http://server1">
+  Enter your name:
+  <input type="text" name="fname" />
+  <br />
+  Enter your age:
+  <input type="text" name="age" />
+  <br />
+  <input type="submit" value="Submit" />
+
+  <label for="fname">First name:</label>
+  <input type="text" name="fname" id="fname" /><br />
+
+  <input type="checkbox" name="vehicle" value="Bike" />
+  <!-- A slider -->
+  <input type="range" name="movie-rating" min="0" max="10" step="0.1" />
+  <select name="rental-option">
+    <option value="small">Small</option>
+    <option value="family">Family Sedan</option>
+    <option value="lux">Luxury</option>
+  </select>
+  <input list="ide" />
+
+  <datalist id="ide">
+    <option value="Visual Studio Code" />
+    <option value="Atom" />
+    <option value="Sublime Text" />
+  </datalist>
+</form>
+
+<!-- Semantic -->
+<!-- Using Images -->
+<figure>
+  <img src="qwerty.jpg" />
+  <figcaption>The image shows the layout of a qwerty keyboard.</figcaption>
+</figure>
+<!-- Creating Sections -->
+<section>
+  <!--defines theme-->
+  <h2>Top Sports league in America</h2>
+  <!--writes independent content relating to that theme-->
+  <article>
+    <p>One of the top sports league is the nba.</p>
+  </article>
+  <article>
+    <!--Main Content-->
+  </article>
+  <aside>
+    <!--Additional information-->
+  </aside>
+</section>
